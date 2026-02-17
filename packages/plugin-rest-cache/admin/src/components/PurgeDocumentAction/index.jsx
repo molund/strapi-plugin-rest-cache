@@ -60,7 +60,7 @@ function PurgeDocumentAction({
               'Are you sure you want to purge REST Cache for this entry?',
           })}</>,
         onConfirm: async () => {
-          await post(`/${pluginId}/purge`, {
+          await post(`/admin/${pluginId}/purge`, {
             contentType: model,
             params,
             wildcard: isSingleType,

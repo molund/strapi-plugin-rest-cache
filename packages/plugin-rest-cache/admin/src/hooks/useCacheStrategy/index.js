@@ -34,7 +34,7 @@ const useCacheStrategy = (shouldFetchData = true) => {
         type: 'GET_DATA',
       });
 
-      const {data} = await get(`/${pluginId}/config/strategy`, {
+      const {data} = await get(`/admin/${pluginId}/config/strategy`, {
         signal,
       });
       const strategy = data.strategy

@@ -36,7 +36,7 @@ function PurgeCacheButton({ contentType, params, wildcard = undefined, fullWidth
       // Show the loading state
       setIsModalConfirmButtonLoading(true);
 
-      await post(`/${pluginId}/purge`, {
+      await post(`/admin/${pluginId}/purge`, {
         contentType,
         params,
         wildcard,
